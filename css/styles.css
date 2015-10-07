@@ -35,14 +35,15 @@ h1 > span {
 }
 
 .add-item {
-  padding: 0.5em 2em;
   border: none;
+  padding-left: 0.5em;
   border-radius: 5px;
-  font-size: 1.2em;
+  font-size: 2em;
+  font-family: 'Indie Flower', cursive;
 }
 
 .add-section {
-  width: 26.5em;
+  width: 28.5em;
   margin: 0 auto;
 }
 
@@ -67,8 +68,9 @@ input[type="checkbox"] {
   float: left;
   position: relative;
   top: 18px;
-  left: 4em;
+  left: 6.5em;
   padding-left: 15px;
+  border: 1px solid #333;
 }
 
 .list-section > ul > li {
@@ -76,6 +78,7 @@ input[type="checkbox"] {
   width: 40.625em;
   height: 50px;
   margin: 0 auto;
+  margin-top: 20px;
 }
 
 .list-section > ul {
@@ -83,11 +86,20 @@ input[type="checkbox"] {
 }
 
 .list-section .list-item {
-  width: 25em;
+  width: 20em;
   height: 50px;
   background-color: #fff;
   border-radius: 5px;
   margin: 0 auto;
+  border: 1px solid #333;
+  font-family: 'Indie Flower', cursive;
+}
+
+.list-section .list-item > p {
+  margin-left: 0.5em;
+  font-size: 2em;
+  position: relative;
+  bottom: 0.9em;
 }
 
 .remove-btn {
@@ -99,8 +111,9 @@ input[type="checkbox"] {
   font-size: 1.5em;
   float: right;
   position: relative;
-  bottom: 50px;
-  right: 45px;
+  bottom: 2.1em;
+  right: 85px;
+  border: 1px solid #333;
   
 }
 
