@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('../images/grocery-background.png'); 
+  background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url('../images/grocery-background.png'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
