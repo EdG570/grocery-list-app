@@ -12,7 +12,10 @@
   <div class ="main">
       <h1>Shopping <span>List</span></h1>
      <div class ="add-section">
-        <input class="add-item" type ="text" name="add"><button class="button">Add</button>
+        <form name="add-item-form">
+          <input class="add-item" type ="text" name="add">
+          <input type="submit" value="Add" align="right" name="submit-item"/>
+        </form>
     </div>
     <div class="list-section">
       <table>
@@ -22,15 +25,26 @@
           <td id="remove">Remove</td>
         </tr>
       </table>
-      <ul>
-        <li><input type="checkbox" class="myClass"/><div class="list-item"><p>Oranges</p></div><button class="remove-btn">X</button></li>
-        <li><input type="checkbox" class="myClass"/><div class="list-item"><p>Lemons</p></div><button class="remove-btn">X</button></li>
+      <ul class="shopping-list">
+          <li><input type="checkbox" class="myClass"/>
+              <div class="list-item">
+                <p>Oranges</p>
+              </div>
+              <button class="remove-btn">X</button>
+          </li>
+          <li>
+              <input type="checkbox" class="myClass"/>
+              <div class="list-item">
+              <p>Lemons</p>
+              </div>
+              <button class="remove-btn">X</button></li>
       </ul>
        
     </div>
 
         <button id="reset-btn" class="button">Reset List</button>
   </div>
-
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
