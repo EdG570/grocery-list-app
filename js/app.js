@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-//User enters and submits an item which adds an li element to their list */
+//User enters and submits an item which adds an li element to their list 
   
   $('form').submit(function(event){
     event.preventDefault();
@@ -11,9 +11,15 @@ $(document).ready(function(){
 //Allows users to check and uncheck complete button in their list
 
   $('.shopping-list').on('click', '.complete-btn', function(){
-    $('.check-mark').toggle();
-    $('p').css('text-decoration', 'line-through')
-    });
+    
+    var line = $(this).siblings('.list-item').children('p').css('text-decoration', 'line-through');
+    var noLine = $(this).siblings('.list-item').children('p').css('text-decoration', 'none');
+
+    $(this).find('.check-mark').toggle();
+    
+    line;
+    
+  });
 
 //Removes list items when clicked
 
@@ -21,6 +27,11 @@ $(document).ready(function(){
       $(this).closest('li').remove();
   });
 
+//Entire list is cleared
+
+  $('.shopping-list').on('click', '#reset-btn', function(){
+      $(this).find('li').remove();
+  });
 
 });
 
