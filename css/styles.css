@@ -58,7 +58,6 @@ input[type="submit"] {
 .list-section {
   width: 40.625em;
   background: rgba(255, 255, 255, .3);
-  /*height: 25.625em;*/
   margin: 0 auto;
   border-radius: 5px;
   margin-top: 30px;
@@ -149,6 +148,7 @@ table {
   letter-spacing: 1px;
   font-size: 1.2em;
   font-weight: 300;
+  width: 25.35em;
 }
 
 #list {
@@ -158,6 +158,13 @@ table {
 #remove {
   padding-left: 9em;
 }
+
+
+/*----------MEDIA QUERIES-----------*/
+
+@media only screen and (max-width: 750px) {
+ 
+}  
 
 
 
