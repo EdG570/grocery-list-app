@@ -12,18 +12,15 @@ $(document).ready(function(){
 
   $('.shopping-list').on('click', '.complete-btn', function(){
     
-    var line = $(this).siblings('.list-item').children('p').css('text-decoration', 'line-through');
-    var noLine = $(this).siblings('.list-item').children('p').css('text-decoration', 'none');
-
     $(this).find('.check-mark').toggle();
     
-    if(noLine){
-        line;
+    if($(this).siblings('.list-item').children('p').css('text-decoration', 'none')){
+        $(this).siblings('.list-item').children('p').css('text-decoration', 'line-through');
       }
 
-    else {
-      noLine;
-    }
+    else if($(this).siblings('.list-item').children('p').css('text-decoration', 'line-through')){
+        $(this).siblings('.list-item').children('p').css('text-decoration', 'none');
+    };
     
   });
 
