@@ -14,14 +14,8 @@ $(document).ready(function(){
     
     $(this).find('.check-mark').toggle();
     
-    if($(this).siblings('.list-item').children('p').css('text-decoration', 'none')){
-        $(this).siblings('.list-item').children('p').css('text-decoration', 'line-through');
-      }
-
-    else if($(this).siblings('.list-item').children('p').css('text-decoration', 'line-through')){
-        $(this).siblings('.list-item').children('p').css('text-decoration', 'none');
-    };
-    
+    $(this).next().children('p').toggleClass('line');
+          
   });
 
 //Removes list items when clicked
