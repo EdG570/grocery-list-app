@@ -17,7 +17,13 @@ $(document).ready(function(){
 
     $(this).find('.check-mark').toggle();
     
-    line;
+    if(noLine){
+        line;
+      }
+
+    else {
+      noLine;
+    }
     
   });
 
@@ -29,8 +35,8 @@ $(document).ready(function(){
 
 //Entire list is cleared
 
-  $('.shopping-list').on('click', '#reset-btn', function(){
-      $(this).find('li').remove();
+  $('#reset-btn').on('click', function(){
+      $(this).siblings('.list-section').find('li').remove();
   });
 
 });
