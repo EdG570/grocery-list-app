@@ -10,26 +10,15 @@ $(document).ready(function(){
 
 //Allows users to check and uncheck complete button in their list
 
-  $('.complete-btn').on('click', function(){
-    if($('.check-mark').css('display', 'none')){
-      $('.check-mark').show();
-      $('p').css('text-decoration', 'line-through');
-    }  
-   });
-
-  $('.complete-btn').on('click', function(){
-    if(('.check-mark').show()){
-      $('.check-mark').css('display', 'none');
-      $('p').css('text-decoration', 'none');
-    }
-  });
- 
+  $('.shopping-list').on('click', '.complete-btn', function(){
+    $('.check-mark').toggle();
+    $('p').css('text-decoration', 'line-through')
+    });
 
 //Removes list items when clicked
 
-  $('.remove-btn').on('click', function(){
-      $('li').remove();
-
+  $('.shopping-list').on('click', '.remove-btn', function(){
+      $(this).closest('li').remove();
   });
 
 

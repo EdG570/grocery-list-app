@@ -78,6 +78,10 @@ input[type="submit"] {
   width: 40px;
 }
 
+.display {
+  display: block;
+}
+
 .check-mark
  {
   width: 45px;
